@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8" />
-    <title>User form</title>
+    <title>Aply form</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -22,46 +22,98 @@
   </head>
 
   <body>
-    <header style="text-align: center;">
-      <h1>Second page</h1>
-      <h2>Practice form tag</h2>
+    <header
+      style="text-align: center;"
+      style="font-family: Verdana, Geneva, Tahoma, sans-serif;"
+    >
+      <h1>Apply form</h1>
+      <h2>Are u readdy to start codeing</h2>
     </header>
-    <main style="text-align: center;">
+    <main
+      style="text-align: center;"
+      style="
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      "
+    >
+      <div style="background-color: darkgray;" style="margin: 0 0 0 0;">
+        <p>Please insert your info in the fields below</p>
+      </div>
       <!--Osnovite za form tagot , text atributi i label i nivno znacenje-->
-      <form id="first-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="firstname" />
-        <br />
-        <label for="surname">Surname</label>
-        <input type="text" id="surname" name="surname" />
-        <br />
-        <input type="radio" id="male" name="gender" value="male" />
-        <label for="male">Male</label><br />
-        <input type="radio" id="female" name="gender" value="female" />
-        <label for="female">Female</label><br />
-        <input type="radio" id="other" name="gender" value="other" />
-        <label for="other">Other</label>
-        <br />
-        <input
-          type="hidden"
-          name="hidden_field"
-          value="value of hidden field"
-        />
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" /><br />
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-        <label for="vehicle1"> I have a bike</label><br />
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-        <label for="vehicle2"> I have a car</label><br />
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-        <label for="vehicle3"> I have a boat</label><br />
-        <input type="submit" value="Submit" />
-      </form>
+      <div style="background-color: cadetblue;">
+        <form id="first-form">
+          <p>Please give us your full name and surname</p>
+          <label for="firstname">Name</label>
+          <input type="text" name="firstname" id="fname" />
+          <label for="surname">Surname</label>
+          <input type="text" name="surname" id="sname" />
+          <br />
+          <p>Answer the given question by pressing the coresponding answer</p>
+          <br />
+          <p>What programeing language are u familiar with</p>
+          <input
+            type="checkbox"
+            name="programeing_language"
+            id="planguage"
+            value="HTML"
+          />
+          <label for="programeing_language">HTML</label>
+          <input
+            type="checkbox"
+            name="programeing_language"
+            id="planguage"
+            value="CSS"
+          />
+          <label for="programeing_language">CSS</label>
+          <input
+            type="checkbox"
+            name="programeing_language"
+            id="planguage"
+            value="JavaScript"
+          />
+          <label for="programeing_language">JavaScript</label>
+          <input
+            type="checkbox"
+            name="programeing_language"
+            id="planguage"
+            value="React"
+          />
+          <label for="programeing_language">REACT</label>
+          <pre id="preview"></pre>
+          <br />
+          <p>How long have u been codeing?</p>
+          <label for="yearscodeing"
+            >Please insert in years (eg. 1 year , 0.5 year)</label
+          >
+          <input type="text" name="yearscodeing" id="ycode" />
+          <br />
+          <p>Give use your contact info so we can contact you:</p>
+          <label for="email">Your email :</label>
+          <input type="email" name="email" id="email" />
+          <br />
+          <br />
+          <label for="pnumber">Your phone number</label>
+          <input type="number" name="pnumber" id="pnumber" />
+          <br />
+          <p>Please confirm u are not a robbot</p>
+          <br />
+          <label for="robot">Press if not a robot</label>
+          <input type="radio" name="robot" id="robot" value="not a robot" />
+          <p>Submit your aplication by clicking this button :</p>
+          <label for="submit">Submit your aplication</label>
+          <input type="submit" name="submit" id="submit" />
+          <br />
+          <p>
+            Your will get a notification on your email or message on your phone
+            about your aplication in about 15 to 30 minutes
+          </p>
+        </form>
+      </div>
       <pre id="preview"></pre>
+      <br />
     </main>
     <footer style="text-align: center;">
       <div>
-        <a href="/index.html"> go to first page </a>
+        <a href="/index.html"> Go back to portfolio page </a>
       </div>
     </footer>
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
