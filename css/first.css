@@ -1,0 +1,18 @@
+header {
+  text-align: center;
+  color: red;
+  font-size: 20px;
+  font-style: italic;
+}
+#header-index {
+  color: royalblue;
+  text-decoration: cyan;
+}
+.h1-index {
+  text-align: center;
+  text-transform: uppercase;
+}
+/* komentar vo css fajl , browserot se kje ignorira no koderot da moze da vidi komentar koga kje go 
+pregleduva faljot podocna
+Druga korist e da se komentira del od kodot za da se testira shto bi se slucilo
+shortcut ctrl + ? */
