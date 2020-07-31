@@ -1,13 +1,16 @@
+/* selektor */
 header {
   text-align: center;
   color: red;
   font-size: 20px;
   font-style: italic;
 }
+/* id selektor */
 #header-index {
   color: royalblue;
   text-decoration: cyan;
 }
+/* klasen selektor */
 .h1-index {
   text-align: center;
   text-transform: uppercase;
@@ -16,3 +19,28 @@ header {
 pregleduva faljot podocna
 Druga korist e da se komentira del od kodot za da se testira shto bi se slucilo
 shortcut ctrl + ? */
+/* kombinirani selektori */
+h1 .inside {
+  color: magenta;
+}
+#main .para1 {
+  font-weight: bold;
+}
+#main .para2 {
+  font-style: italic;
+}
+main .back1 {
+  background-color: mediumaquamarine;
+}
+main .back2 {
+  background-color: mediumslateblue;
+}
+/* psevdo selektori */
+a:hover {
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+input:required {
+  border: 4px;
+}
