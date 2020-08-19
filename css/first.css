@@ -44,3 +44,10 @@ a:hover {
 input:required {
   border: 4px;
 }
+/* box model predavanje */
+h1 {
+  width: 900px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 10px;
+}
