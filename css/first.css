@@ -1,53 +1,156 @@
-/* selektor */
-header {
-  text-align: center;
-  color: red;
-  font-size: 20px;
-  font-style: italic;
+/* universal */
+* {
+  background-color: cornsilk;
+  padding: 0;
+  margin: 0;
 }
-/* id selektor */
-#header-index {
-  color: royalblue;
-  text-decoration: cyan;
-}
-/* klasen selektor */
-.h1-index {
+.header-main {
   text-align: center;
   text-transform: uppercase;
+  background-color: cornsilk;
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
-/* komentar vo css fajl , browserot se kje ignorira no koderot da moze da vidi komentar koga kje go 
-pregleduva faljot podocna
-Druga korist e da se komentira del od kodot za da se testira shto bi se slucilo
-shortcut ctrl + ? */
-/* kombinirani selektori */
-h1 .inside {
-  color: magenta;
-}
-#main .para1 {
+.header2-main {
+  text-align: left;
+  padding-left: 40px;
   font-weight: bold;
-}
-#main .para2 {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-top: 40px;
   font-style: italic;
 }
-main .back1 {
-  background-color: mediumaquamarine;
+.header3-main {
+  color: aqua;
 }
-main .back2 {
-  background-color: mediumslateblue;
-}
-/* psevdo selektori */
 a:hover {
-  color: red;
-  text-transform: uppercase;
+  font-size: 20px;
+}
+.form-h1 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.form-h2 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* header */
+
+#header-index {
+  text-align: center;
+}
+.unordered-list-header {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: cornsilk;
+  display: inline-block;
+  text-align: left;
+}
+.unordered-list-header li {
+  float: left;
+}
+.unordered-list-header li p {
+  background-color: gainsboro;
   font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
 }
-input:required {
-  border: 4px;
+/* main */
+
+#main {
+  position: relative;
+  text-align: center;
 }
-/* box model predavanje */
-h1 {
-  width: 900px;
-  padding: 20px;
-  border: 5px solid black;
-  margin: 10px;
+.img-basic-info {
+  width: 200px;
+  border: black solid;
+}
+.para-basic-info {
+  border: black solid;
+  text-align: center;
+  padding-right: 20px;
+}
+.link-kontakt a {
+  text-decoration: none;
+  color: rgb(48, 224, 77);
+}
+.section-basic-education div {
+  text-align: left;
+  padding-left: 50px;
+  margin-top: 20px;
+  border: black solid;
+}
+
+/* footer */
+
+.footer-basic {
+  text-align: center;
+  padding-top: 0;
+}
+.link-footer a {
+  text-decoration: none;
+  color: rgb(48, 224, 77);
+}
+/* position */
+
+.unordered-list-header {
+  position: sticky;
+  top: 0;
+}
+.footer-basic {
+  position: fixed;
+  bottom: 0;
+  left: 40%;
+}
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-basic {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* form page css */
+
+/* header */
+
+.form-h1 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: crimson;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+.form-h2 {
+  text-transform: uppercase;
+  font-style: italic;
+  color: darkslategrey;
+  padding: 10px;
+}
+/* main */
+.main-form {
+  text-align: center;
+}
+.form-para {
+  font-style: italic;
+}
+
+/* footer */
+.footer-form {
+  text-align: center;
 }
