@@ -14,7 +14,8 @@
   width: 16px;
   height: 16px;
   content: " ";
-  background-image: url(/img/nav-bar-ul-img.jpg);
+  background-image: url(../img/nav-bar-ul-img.jpg);
+  background-size: contain;
   position: absolute;
   left: -20px;
   top: 20px;
@@ -53,6 +54,7 @@
 /* main */
 main {
   padding: 3em 1em;
+  margin: 3em 1em;
 }
 
 .col img {
@@ -86,6 +88,17 @@ main {
 .footer-navbar li {
   float: right;
   padding-left: 5em;
+  position: relative;
+}
+.footer-navbar li::before {
+  width: 16px;
+  height: 16px;
+  content: " ";
+  background-image: url(../img/nav-bar-ul-img.jpg);
+  background-size: contain;
+  position: absolute;
+  right: 50px;
+  top: 5px;
 }
 .footer-navbar {
   display: flex;
