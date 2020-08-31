@@ -52,6 +52,9 @@
   padding: 0 6em;
 }
 /* main */
+.main-article-container {
+  max-width: 1050px;
+}
 main {
   padding: 3em 1em;
   margin: 3em 1em;
